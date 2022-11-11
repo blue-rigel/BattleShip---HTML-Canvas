@@ -32,9 +32,11 @@
     .blackbox {
         flex: 2;
     }
+
     .blackbox.wider {
         flex: 3;
     }
+
     .greybox {
         flex: 2;
         margin-left: 0;

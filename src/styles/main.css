@@ -81,17 +81,19 @@ canvas {
     border: solid 8px #ffb000;
 }
 
-@media screen and (min-width: 768px){
-    .scoreboard, .gameboard {
+@media screen and (min-width: 768px) {
+
+    .scoreboard,
+    .gameboard {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    
+
     .scoreboard {
         margin-left: 50px;
         margin-right: 8px;
     }
-    
+
     .gameboard {
         margin-right: 50px;
         margin-left: 8px;
@@ -110,32 +112,40 @@ canvas {
     .battleship-container {
         flex-direction: column-reverse;
     }
+
     canvas {
         width: calc(100% - 16px);
         height: 100%;
-        margin:0;
+        margin: 0;
     }
+
     .gameboard {
         padding: 0;
         flex: 0.1;
     }
+
     .scoreboard {
         flex: 9;
     }
+
     .player-stat {
         margin-top: -5px;
     }
+
     .scoreboard table {
         padding-top: 10px;
     }
-    .scoreboard tbody{
+
+    .scoreboard tbody {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
+
     .scoreboard tr {
         width: 48vw;
     }
+
     .scoreboard td:first-child img {
         width: 100px;
     }
@@ -145,21 +155,25 @@ canvas {
         padding-right: 1px;
     }
 }
+
 /* Tablet css */
 @media (min-width: 425px) and (max-width: 768px) {
     body {
         overflow-y: scroll;
     }
+
     .battleship-container {
         flex-direction: column-reverse;
     }
+
     canvas {
         width: calc(100% - 16px);
         height: 100%;
         margin: 0;
     }
 
-    .gameboard, .scoreboard {
+    .gameboard,
+    .scoreboard {
         padding: 15px;
         margin: 0;
     }
@@ -169,23 +183,28 @@ canvas {
         margin-left: 0;
         margin-right: 0;
     }
+
     .player-stat {
         flex: 1;
         max-height: 200px;
     }
+
     .player-stat:last-child {
         margin-right: 10px;
     }
+
     .scoreboard table {
         max-width: 50%;
         padding-top: 10px;
     }
-    .scoreboard tbody{
+
+    .scoreboard tbody {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         flex: 1 0 21%;
     }
+
     .scoreboard td:first-child img {
         width: 100px;
     }
