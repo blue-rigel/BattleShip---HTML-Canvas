@@ -1,0 +1,42 @@
+.navbar {
+    background-color: #9494ff;
+    justify-content: space-evenly;
+    padding: 8px;
+}
+
+.blackbox {
+    height: 30px;
+    min-width: 30px;
+    max-width: 30px;
+    background-color: #4a4a4a;
+    flex: 0.5;
+    margin: 0 3px;
+}
+
+.blackbox.wider {
+    max-width: 40px;
+}
+
+.greybox {
+    height: 30px;
+    background-color: #7676b7;
+    margin: 0 5px;
+}
+
+.navbar input {
+    flex: 20;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .blackbox {
+        flex: 2;
+    }
+    .blackbox.wider {
+        flex: 3;
+    }
+    .greybox {
+        flex: 2;
+        margin-left: 0;
+    }
+}
